@@ -1,21 +1,21 @@
 {
-    "TOKEN": "",
-    "PRESENCE": "",
-    "CPM": [200, 310],
-    "FIRST": true,
-    "id": 0,
-    "channel_id": 0,
-    "TARGET_AMOUNT": 0.0,
-    "SMART_DELAY": true,
+    "TOKEN": "MTM2ODI2MTI1MjkwMzYwNDM5NQ.GqkDof.e0btda8mlhRDjX7VjhUsMJspeoWUNDV_hN7c20",
+    "PRESENCE": "dnd",
+    "CPM": [
+        200,
+        310
+    ],
+    "FIRST": false,
+    "id": 1368261252903604395,
+    "channel_id": 1,
+    "TARGET_AMOUNT": 1.01,
+    "SMART_DELAY": false,
     "RANGE_DELAY": false,
     "DELAY": [
-        0,
-        1
+        0.0,
+        0.0
     ],
-    "BANNED_WORDS": [
-        "bot",
-        "ban"
-    ],
+    "BANNED_WORDS": [],
     "MESSAGES": [
         "thanks",
         "thank you",
@@ -43,5 +43,5 @@
     "DELAY_TRIVIADROP": true,
     "DELAY_MATHDROP": true,
     "DELAY_PHRASEDROP": true,
-    "DELAY_REDPACKET": true
+    "DELAY_REDPACKET": false
 }
