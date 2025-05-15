@@ -1,0 +1,28 @@
+name: Run Python Script 24/7
+
+on:
+  schedule:
+    # This cron syntax runs the job every hour
+    - cron: '0 * * * *'  # Runs every hour, adjust this as needed
+  workflow_dispatch:  # Allows you to manually trigger the workflow
+
+jobs:
+  run-python-script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'  # You can change to the specific version you need (e.g., '3.9')
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt  # Installs dependencies listed in requirements.txt
+
+    - name: Run tipcc_autocollect.py script
+      run: python tipcc_autocollect.py  # This runs the main.py script
